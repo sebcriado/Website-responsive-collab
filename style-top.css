@@ -11,11 +11,17 @@ body {
     overflow-wrap: break-word;
 }
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 50px;
 }
 nav h2 {
-    margin-left: 340px;
+    margin-left: 10%;
     font-size: 30px;
+}
+.menu-burger {
+    margin-right: 260px;
 }
 .top-content {
     background-image: url(/Images/image1.jpg);
@@ -26,13 +32,13 @@ nav h2 {
     align-items: center;
     background-position: 50% 50%;
     color: #2E2F33;
+
 }
 .top-text {
     font-family: "OpenSans", Arial, Helvetica, sans-serif;
-    margin-left: 380px;
+    /* margin-left: 380px; */
     background-color: #ffffff52;
-    position: sticky;
-
+    margin-left: 13%;
 }
 .top-text h3 {
     font-family: "Osawald", Arial, Helvetica, sans-serif;
@@ -44,7 +50,6 @@ nav h2 {
     font-size: 20px;
     line-height: 35px;
 }
-
 .image1 {
     width: 100%;
     z-index: -1;
@@ -67,7 +72,9 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white; 
+    min-width: 300px;
+    
 }
 .content-box h2 {
     font-size: 30px;
@@ -80,7 +87,7 @@ a:link {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    /* padding: 20px; */
     width: 100%;
     height: 360px;
     text-align: center;
@@ -114,7 +121,7 @@ a:link {
 }
 .container-layout {
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: #38D2D9;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -126,13 +133,14 @@ a:link {
 }
 .img-layout {
     width: 50%;
-    height: 100%;
+    height: 500px;
     background-size: cover;
     background-image: url(/Images/image2.jpg);
 }
 .layout-text {
     margin: auto;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 30px;
 }
 .layout-a {
     background-color: white;
@@ -151,11 +159,8 @@ a:link {
         background-position: 90% 50%;
         display: flex;
         flex-direction: column-reverse;
-
-       
     }
     .top-text {
-  
     display: flex;
     align-items: center;
     align-content: space-around;
@@ -165,15 +170,41 @@ a:link {
     flex-direction: column;
         
     }
+    .content-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin: auto;
+    }
+    .container-layout {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .img-layout {
+        width: 100%;
+        height: 500px;
+        background-position: center;
+    }
     .layout-text {
         display: flex;
       flex-wrap: wrap;
-     
+      height: 500px
       }
 }
 
-@media screen and (max-width: 1100){
-.top-text {
-    margin: auto;
+@media screen and (max-width: 1100px){
+    .content-box {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+    .content-box {
+        background-position: 70% 70%;
+    }
+    
 }
