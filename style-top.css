@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -26,13 +28,16 @@ nav h2 {
     color: #2E2F33;
 }
 .top-text {
-    font-family: O;
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;
     margin-left: 380px;
+    background-color: #ffffff52;
+    position: sticky;
+
 }
 .top-text h3 {
     font-family: "Osawald", Arial, Helvetica, sans-serif;
-    font-size: 72px;
-    margin: 0;
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    
 }
 .top-text p {
     font-family: "OpenSans", Arial, Helvetica, sans-serif;
@@ -44,22 +49,31 @@ nav h2 {
     width: 100%;
     z-index: -1;
 }
+.freepik {
+    color: #38D2D9;
+}
+a:link {
+    text-decoration: none;
+}
 .top-button {
     background-color: black;
     border-radius: 50px;
-    background-image: none;
-    font-size: 1.125rem;
-    margin: 27px auto 0 0;
     padding: 15px 39px 16px 38px;
-}
-.top-button a {
-    color:white;
+    width: 111px;
+    color: white;
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;
 }
 .content-box { 
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+}
+.content-box h2 {
+    font-size: 30px;
+}
+.content-box p {
+    font-size: 18px;
 }
 .box1, .box2, .box3 {
     display: flex;
@@ -68,7 +82,7 @@ nav h2 {
     justify-content: center;
     padding: 30px;
     width: 100%;
-    height: 300px;
+    height: 360px;
     text-align: center;
 }
 .box1 {
@@ -83,22 +97,83 @@ nav h2 {
 }
 
 .about {
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.about-button {
+    border: solid 2px #D9D9D9;
+    padding: 15px;
+    width: 150px;
+    background: white;
+    margin-top: 40px;
+}
+.container-layout {
+    width: 100%;
+    height: 600px;
+    background-color: #38D2D9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+
+}
+.img-layout {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/Images/image2.jpg);
+}
+.layout-text {
+    margin: auto;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.layout-a {
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px 39px 16px 38px;
+    width: 111px;
+    color:#38D2D9
 }
 
 
+@media screen and (max-width: 750px) {
+    nav h2{
+     margin-left: 10px;
+    }
+    .top-content {
+        background-position: 90% 50%;
+        display: flex;
+        flex-direction: column-reverse;
 
-@media (max-width: 575px) {
-    .top-content {
-        background-position: 90.67% 50%;
+       
     }
+    .top-text {
+  
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+        
+    }
+    .layout-text {
+        display: flex;
+      flex-wrap: wrap;
+     
+      }
 }
-@media (max-width: 1199px) {
-    .top-content {
-        background-position: 100% 50%;
-    }
+
+@media screen and (max-width: 1100){
+.top-text {
+    margin: auto;
+}
 }
