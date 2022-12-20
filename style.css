@@ -9,11 +9,13 @@
 .title-service {
   text-align: center;
   font-size: 40px;
+  margin-top: 40px;
 }
 
 .text-service {
   text-align: center;
   color: #808080;
+  margin-top: 20px;
 }
 
 .circle {
