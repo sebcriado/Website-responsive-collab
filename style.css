@@ -33,6 +33,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .text-box {
@@ -73,8 +75,7 @@
 }
 
 .com-block {
-  height: 500px;
-  display: flex;
+  height: auto;
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
@@ -82,7 +83,6 @@
 
 .com-content {
   background-color: #f2f2f2;
-  height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@
 
 .com-img {
   background-image: url(./assets/41683.jpg);
-  height: 100%;
+  height: 500px;
   width: 50%;
   background-size: cover;
   position: sticky;
@@ -125,6 +125,11 @@
   letter-spacing: 2px;
 }
 
+.btn-solid:hover {
+  cursor: pointer;
+  background-color: #30afb6;
+}
+
 .box-today {
   background-color: #38d2d9;
   width: 100%;
@@ -151,4 +156,101 @@
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+.btn-solid-white:hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+.business-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.transp-box {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+}
+
+.btn-solid-black {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .com-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .com-content {
+    min-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 500px;
+  }
+  .com-img {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+  }
+
+  .box-today {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 350px;
+    min-width: 100%;
+    margin: auto;
+  }
+  .today-content {
+    padding: 40px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .btn-solid-white {
+    margin-left: 40px;
+  }
+
+  .text-service {
+    width: 340px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .title-service {
+    width: 340px;
+    margin: auto;
+    margin-top: 80px;
+  }
 }
