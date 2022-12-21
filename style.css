@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.backgr-transp {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 98;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-service {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.text-service {
+  text-align: center;
+  color: #808080;
+  margin-top: 20px;
+}
+
+.circle {
+  background-color: #38d2d9;
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.text-box {
+  text-align: center;
+  color: #808080;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+  margin-top: -2px;
+}
+
+.title-box {
+  font-weight: 400;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 80px;
+}
+
+.learn-btn {
+  text-align: center;
+  border: 1px solid #38d2d9;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.com-block {
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.com-content {
+  background-color: #f2f2f2;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.com-img {
+  background-image: url(./assets/41683.jpg);
+  height: 500px;
+  width: 50%;
+  background-size: cover;
+  position: sticky;
+}
+
+.com-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  margin: auto;
+}
+
+.btn-solid {
+  background-color: #38d2d9;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.btn-solid:hover {
+  cursor: pointer;
+  background-color: #30afb6;
+}
+
+.box-today {
+  background-color: #38d2d9;
+  width: 100%;
+  height: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-solid-white {
+  background-color: white;
+  color: #38d2d9;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.btn-solid-white:hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+.business-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.transp-box {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+}
+
+.btn-solid-black {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .com-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .com-content {
+    min-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 500px;
+  }
+  .com-img {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+  }
+
+  .box-today {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 350px;
+    min-width: 100%;
+    margin: auto;
+  }
+  .today-content {
+    padding: 40px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .btn-solid-white {
+    margin-left: 40px;
+  }
+
+  .text-service {
+    width: 340px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .title-service {
+    width: 340px;
+    margin: auto;
+    margin-top: 80px;
+  }
+}
