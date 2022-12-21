@@ -65,7 +65,7 @@ nav h2 {
 }
 
 .top-content {
-  background-image: url(/Images/image1.jpg);
+  background-image: url("./Images/image1.jpg");
   background-size: cover;
   height: 700px;
   width: 100%;
@@ -192,7 +192,7 @@ a:link {
   width: 50%;
   height: 500px;
   background-size: cover;
-  background-image: url(/Images/image2.jpg);
+  background-image: url("./Images/image2.jpg");
 }
 .layout-text {
   margin: auto;
