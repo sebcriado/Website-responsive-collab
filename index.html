@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style-top.css">
     <title>Document</title>
 </head>
+
 <body>
+
 <header>
     <nav>
         <h2>Business Co</h2>
-            <div class="menu-burger"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <ul class="menu">
+            <li><a class="menuItem" href="#">Page 1</a></li>
+            <li><a class="menuItem" href="#">Page 2</a></li>
+            <li><a class="menuItem" href="#">Page 3</a></li>
+            <li><a class="menuItem" href="#">Page 4</a></li>
+            <li><a class="menuItem" href="#">Page 5</a></li>
+            <li><a class="menuItem" href="#">Page 6</a></li>
+            <li><a class="menuItem" href="#">Page 8</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+            <!-- <div class="menu-burger"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
-            
-            </div>
+             <div class="link">
+            <a href="">Page 1</a>
+            <a href="">Page 2</a>
+            <a href="">Page 3</a>
+            <a href="">Page 4</a>
+        </div>
+            </div> -->
     </nav>
 
 <div class="top-content">
-    
+
     <div class="top-text">
         <h3>We Help your <br>
              brand to be <br>
@@ -97,5 +119,44 @@
     </div>
 </section>
 
+<script>
+    
+    // let menu = document.querySelector(".menu");
+    //     let link = document.querySelector(".link");
+
+    //     function openAndCloseMenu() {
+    //     link.classList.toggle("open");
+    //     }
+
+    //     menu.addEventListener("click", openAndCloseMenu);
+
+        
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
+</script>
 </body>
 </html>

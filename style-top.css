@@ -17,12 +17,55 @@ nav {
     height: 50px;
 }
 nav h2 {
-    margin-left: 10%;
+    margin-left: 14%;
     font-size: 30px;
 }
 .menu-burger {
-    margin-right: 260px;
+    /* margin-right: 260px; */
 }
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    /* position: fixed; */
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+     background: white;
+    cursor: pointer;
+    margin-right: 24%;
+  }
+  
+  .closeIcon {
+    display: none; 
+  }
+  
+  .menu {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    top: -16px;
+    left: -10px;
+    /* right: 0; */
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.856);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  
+  .showMenu {
+    transform: translate(10px);
+  }
+
 .top-content {
     background-image: url(/Images/image1.jpg);
     background-size: cover;
@@ -37,18 +80,18 @@ nav h2 {
 .top-text {
     font-family: "OpenSans", Arial, Helvetica, sans-serif;
     /* margin-left: 380px; */
-    background-color: #ffffff52;
-    margin-left: 13%;
+    background-color: #ffffff85;
+    margin-left: 18%;
 }
 .top-text h3 {
-    font-family: "Osawald", Arial, Helvetica, sans-serif;
-    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 3.4375rem;
     
 }
 .top-text p {
     font-family: "OpenSans", Arial, Helvetica, sans-serif;
     font-size: 20px;
-    line-height: 35px;
+    /* line-height: 35px; */
 }
 .image1 {
     width: 100%;
@@ -155,10 +198,15 @@ a:link {
     nav h2{
      margin-left: 10px;
     }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
     .top-content {
         background-position: 90% 50%;
         display: flex;
         flex-direction: column-reverse;
+
     }
     .top-text {
     display: flex;
@@ -168,6 +216,10 @@ a:link {
     margin-right: auto;
     justify-content: center;
     flex-direction: column;
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
         
     }
     .content-box {
@@ -196,6 +248,7 @@ a:link {
 }
 
 @media screen and (max-width: 1100px){
+
     .content-box {
         background-position: center;
         display: flex;
