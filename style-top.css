@@ -135,6 +135,7 @@ a:link {
   width: 100%;
   height: 360px;
   text-align: center;
+  gap: 20px;
 }
 .box1 {
   background-color: black;
