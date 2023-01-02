@@ -11,7 +11,5 @@ Collaboration with <a href="https://github.com/PaulineCurt">Pauline Curt</a> on 
 <br>
 <hr>
 <img width="1427" alt="Capture d’écran 2023-01-02 à 13 47 15" src="https://user-images.githubusercontent.com/115630440/210233426-34a8c941-0009-4c0c-a4fb-be4d05f48a32.png">
-<br>
-<hr>
-<img width="509" alt="Capture d’écran 2023-01-02 à 10 24 15" src="https://user-images.githubusercontent.com/115630440/210233428-f3212015-2203-42fd-9dd8-bddb0747aca8.png">
+
 
